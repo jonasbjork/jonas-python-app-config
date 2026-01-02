@@ -1,0 +1,12 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: jonas-python-app
+  labels:
+    app: jonas-python-app
+spec:
+  to:
+    kind: Service
+    name: jonas-python-app
+  port:
+    targetPort: http
