@@ -16,12 +16,12 @@ spec:
     spec:
       containers:
         - name: jonas-python-app
-          image: quay.io/jonasbjork/jonas-python-app:1.0.2-8f0b570
+          image: quay.io/jonasbjork/jonas-python-app:1.0.1-ccd3588
           ports:
           - containerPort: 8080
           env:
           - name: APP_VERSION
-            value: "1.0.2-8f0b570"
+            value: "1.0.1-ccd3588"
           livenessProbe:
             httpGet:
               path: /health
